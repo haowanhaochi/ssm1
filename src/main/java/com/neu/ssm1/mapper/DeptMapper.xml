@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neu.ssm1.mapper.DeptMapper">
+	<delete id="deleteDept" parameterType="Integer">
+		delete from dept where deptno=#{dno}
+	</delete>
+	<insert id="insertDept" parameterType="Dept">
+		insert into dept(deptno, dname, loc)
+		values(#{deptNo}, #{dName}, #{loc})
+	</insert>
+	<select id="queryDept" parameterType="Integer" resultType="Dept">
+		select deptno, dname, loc
+		from dept
+		where #{dno}=deptno
+	</select>
+</mapper>
