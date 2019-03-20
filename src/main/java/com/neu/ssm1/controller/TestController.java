@@ -37,6 +37,5 @@ public class TestController {
 		mav.addObject("dname", data.getdName());
 		mav.addObject("dloc", data.getLoc());
 		return mav;
-		
 	}
 }
