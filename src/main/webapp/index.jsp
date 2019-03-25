@@ -13,5 +13,10 @@
 		<input type="number" step="1" min="1" max="10" name="deptno"/>
 		<input type="submit" value="查询"/>
 	</form>
+	<form action="http://localhost:8080/ssm1/testdelete.action">
+		<p>输入删除的部门编号：</p>
+		<input type="number" step="1" min="1" max="10" name="deptno"/>
+		<input type="submit" value="删除"/>
+	</form>
 </body>
 </html>

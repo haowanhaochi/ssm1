@@ -38,4 +38,11 @@ public class TestController {
 		mav.addObject("dloc", data.getLoc());
 		return mav;
 	}
+	
+	@RequestMapping("/testdelete")
+	public String deleteTest(Integer deptno)
+	{
+		service.delete(deptno);
+		return "deletesuccess.jsp";
+	}
 }
