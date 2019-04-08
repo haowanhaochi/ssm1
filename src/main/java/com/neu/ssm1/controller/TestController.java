@@ -45,4 +45,10 @@ public class TestController {
 		service.delete(deptno);
 		return "deletesuccess.jsp";
 	}
+	@RequestMapping("/testquerys")
+	public String querysTest()
+	{
+		service.querys();
+		return "show.jsp";
+	}
 }

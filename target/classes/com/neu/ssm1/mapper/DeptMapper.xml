@@ -13,4 +13,12 @@
 		from dept
 		where #{dno}=deptno
 	</select>
+	<resultMap type="Dept" id="DeptResMap">
+		<result column="deptno" property="deptNo"/>
+		<result column="dname" property="dName" />
+		<result column="loc" property="loc" />
+	</resultMap>
+	<select id="queryDepts" resultMap="DeptResMap">
+		select * from dept
+	</select>
 </mapper>

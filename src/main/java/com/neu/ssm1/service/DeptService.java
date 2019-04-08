@@ -1,5 +1,7 @@
 package com.neu.ssm1.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,5 +23,12 @@ public class DeptService {
 		Dept dept = mapper.queryDept(dno);
 		System.out.println("service: " + dept.getDeptNo() + dept.getdName() + dept.getLoc());
 		return dept;
+	}
+	
+	public List<Dept> querys()
+	{
+		List<Dept> list = mapper.queryDepts();
+		System.out.println("querys -- " + list);
+		return list;
 	}
 }

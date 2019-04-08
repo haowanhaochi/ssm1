@@ -18,5 +18,9 @@
 		<input type="number" step="1" min="1" max="10" name="deptno"/>
 		<input type="submit" value="删除"/>
 	</form>
+	<form action="http://localhost:8080/ssm1/testquerys.action">
+		<input type="submit" value="查询多个"/>
+	</form>
+	
 </body>
 </html>
